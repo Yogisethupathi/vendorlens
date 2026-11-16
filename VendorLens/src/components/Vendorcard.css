@@ -1,0 +1,72 @@
+.vendor-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.vendor-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.125rem;
+  color: #0f172a;
+}
+
+.vendor-card p {
+  margin: 6px 0;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.vendor-card strong {
+  color: #334155;
+}
+
+/* Status colors */
+.vendor-card .status {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.vendor-card .status.active {
+  color: #16a34a;
+}
+
+.vendor-card .status.inactive {
+  color: #dc2626;
+}
+
+/* Priority colors */
+.vendor-card .priority {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.vendor-card .priority.top {
+  color: #7c3aed;
+}
+
+.vendor-card .priority.high {
+  color: #ea580c;
+}
+
+.vendor-card .priority.medium {
+  color: #0284c7;
+}
+
+/* Payment colors */
+.vendor-card .payment {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.vendor-card .payment.paid {
+  color: #16a34a;
+}
+
+.vendor-card .payment.pending {
+  color: #ca8a04;
+}
+
+.vendor-card .payment.overdue {
+  color: #dc2626;
+}
