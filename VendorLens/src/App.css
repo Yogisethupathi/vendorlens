@@ -1,0 +1,68 @@
+/* CRUD Form Styles */
+.crud-form-container {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.crud-form-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.crud-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.crud-input, .crud-select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  flex: 1 1 180px;
+}
+
+.crud-btn {
+  padding: 8px 16px;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.crud-btn:hover {
+  background-color: #1e293b;
+}
+
+.filter-btn-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: #f1f5f9;
+}
+
+.filter-btn.active {
+  background-color: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}

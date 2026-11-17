@@ -1,6 +1,6 @@
 import type { Vendor } from "../Type/Vendor"
 
-export default function searchvendor<T extends Vendor>( //extends for vendor 
+export default function searchvendor<T extends Vendor>(
     vendors: T[],
     search: string
 ): T[] {
@@ -18,3 +18,6 @@ export default function searchvendor<T extends Vendor>( //extends for vendor
     )
 }
 
+export function getActiveVendors<T extends Vendor>(vendors: T[]): T[] {
+    return vendors.filter((vendor) => vendor.status === "active")
+}

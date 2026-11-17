@@ -3,9 +3,11 @@ import "./Vendorcard.css"
 
 interface Props {
     vendor: PremiumVendor
+    onDelete?: (id: number) => void
+    onToggleStatus?: (id: number) => void
 }
 
-export const Vendorcard = ({ vendor }: Props) => {
+export const Vendorcard = ({ vendor, onDelete, onToggleStatus }: Props) => {
     return (
         <div className="vendor-card">
             <h3>{vendor.name}</h3>
@@ -28,6 +30,29 @@ export const Vendorcard = ({ vendor }: Props) => {
                 <strong>Status:</strong>{" "}
                 <span className={`status ${vendor.status}`}>{vendor.status}</span>
             </p>
+
+            {(onDelete || onToggleStatus) && (
+                <div style={{ display: "flex", gap: "8px", marginTop: "12px" }}>
+                    {onToggleStatus && (
+                        <button
+                            type="button"
+                            onClick={() => onToggleStatus(vendor.id)}
+                            className="btn-toggle-status"
+                        >
+                            Toggle Status
+                        </button>
+                    )}
+                    {onDelete && (
+                        <button
+                            type="button"
+                            onClick={() => onDelete(vendor.id)}
+                            className="crud-btn-delete"
+                        >
+                            Delete
+                        </button>
+                    )}
+                </div>
+            )}
         </div>
     )
 }
