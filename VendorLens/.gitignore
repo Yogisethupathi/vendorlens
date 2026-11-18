@@ -23,5 +23,16 @@ dist-ssr
 *.sln
 *.sw?
 
-#backend
+# Environment
 .env
+*.env
+
+# Notes & Text files
+crud.txt
+*.txt
+
+*.env
+
+# Notes & Text files
+crud.txt
+*.txt
